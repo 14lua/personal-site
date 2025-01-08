@@ -30,7 +30,7 @@
                     <a
                     href={links[i]}
                     target="_blank"
-                    class="greenShadow relative overflow-hidden px-5 py-2 group rounded-full bg-white hover:bg-gray-400 duration-200 text-gray-950"> 
+                    class="luaButton"> 
                         Listen on Spotify &rarr;
                     </a>
                 </div>
