@@ -3,7 +3,7 @@
 </script>
 
 <main class="flex flex-col flex-1 p-4 justify-center items-center">
-    <section id='intoPage' class="grid grid-cols-1 lg:grid-cols-2 gap-10 py-8 sm:py-14 h-[calc(100vh-75px)] justify-center items-center">
+    <section id='intoPage' class="flex flex-col lg:flex-row gap-10 py-8 sm:py-14 h-[calc(100vh-75px)] justify-center items-center">
         <div class="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10">
             <h2 class="font-semibold text-4xl sm:text-5xl md:text-6xl">
                 Welcome to the<br /><span class="poppins text-green-700">the dark side of the moon</span>
@@ -12,7 +12,7 @@
                 Thank you for visiting <i class="fa-solid fa-heart"></i> 
             </p>
         </div>
-        <div class="relative shadow-2xl grid place-items-center">
+        <div class="flex relative shadow-2xl place-items-center">
             <img src="images/profile.png" alt="Profile image" class="object-cover z-[2] max-h-[70vh]" />
         </div>
     </section>
