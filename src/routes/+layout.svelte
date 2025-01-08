@@ -1,5 +1,5 @@
 <script>
-  	import "../app.css";
+	import "../app.css";
 	import Footer from "../components/Footer.svelte";
 	import Header from "../components/Header.svelte";
 
@@ -11,20 +11,31 @@
 	let innerWidth = 0;
 
 	function goTop() {
-	  document.body.scrollIntoView();
+		document.body.scrollIntoView();
 	}
 </script>
 
-<div class="relative flex flex-col max-w-[1400px] mx-auto w-full text-sm sm:text-base min-h-screen">
-  	<div class={"fixed bottom-0 w-full duration-200 flex p-16 z-[10] " + (
-		y > 0 ? ' opacity-full pointer-events-auto' : ' pointer-events-none opacity-0'
- 	)}>
-		<button on:click={goTop} class="ml-auto rounded-full bg-gray-900 text-gray-400 px-3 py-3 sm:px-4 sm:py-4 hover:bg-gray-700 cursor-pointer" aria-label="go-top">
-	  		<i class="fa-solid fa-arrow-up grid place-items-center aspect-square"></i>
+<div
+	class="relative flex flex-col max-w-[1400px] mx-auto w-full text-sm sm:text-base min-h-screen"
+>
+	<div
+		class={"fixed bottom-0 w-full duration-200 flex p-16 z-[10] " +
+			(y > 0
+				? " opacity-full pointer-events-auto"
+				: " pointer-events-none opacity-0")}
+	>
+		<button
+			on:click={goTop}
+			class="ml-auto rounded-full bg-gray-900 text-gray-400 px-3 py-3 sm:px-4 sm:py-4 hover:bg-gray-700 cursor-pointer"
+			aria-label="go-top"
+		>
+			<i
+				class="fa-solid fa-arrow-up grid place-items-center aspect-square"
+			></i>
 		</button>
-  	</div>
-  	<Header {y}/>
-  	<slot />
+	</div>
+	<Header {y} />
+	<slot />
 	<Footer />
 </div>
 
