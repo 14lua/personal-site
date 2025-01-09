@@ -5,9 +5,9 @@ const config = {
   kit: {
     adapter: adapter(),
     paths: {
-      base: process.env.NODE_ENV === 'production' ? '/14lua.github.io/' : '/',
-    }
-  },
+        base: process.env.NODE_ENV === 'production' ? '/14lua.github.io' : '',
+      }
+    },
   preprocess: vitePreprocess(),
 };
 export default config;
