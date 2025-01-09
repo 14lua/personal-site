@@ -1,5 +1,6 @@
 <script lang="ts">
   import { tracksStore } from "../stores/tracks";
+  import { base } from "$app/paths";
   let tracks = $tracksStore?.tracks;
   let firstTrackFilename = tracks ? tracks[0].filename : "";
 </script>
@@ -22,7 +23,7 @@
       </p>
     </div>
     <div class="flex relative shadow-2xl place-items-center">
-      <a href="/music" target="_self">
+      <a href="{base}/music" target="_self">
         <img
           src="images/{firstTrackFilename}"
           alt="Profile"
@@ -69,7 +70,7 @@
       </p>
     </div>
     <div class="flex">
-      <a href="/music" target="_self" class="luaButton">
+      <a href="{base}/music" target="_self" class="luaButton">
         My music so far &rarr;
       </a>
     </div>

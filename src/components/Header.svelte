@@ -1,8 +1,10 @@
 <script>
+  import { base } from "$app/paths";
+
   export let y;
 
   let tabs = [
-    { name: "About", link: "/#about" },
+    { name: "About", link: "#about" },
     { name: "Music", link: "music" },
     // {name: 'Interact', '#interact'},
   ];
@@ -15,11 +17,11 @@
       : " py-4 bg-transparent border-transparent")}
 >
   <h1 class="font-medium">
-    <a href="/" target="_self"><b class="font-bold poppins">Lua</b> Music</a>
+    <a href={base} target="_self"><b class="font-bold poppins">Lua</b> Music</a>
   </h1>
   <div class="sm:flex items-center gap-4 hidden">
     {#each tabs as tab}
-      <a href={tab.link} class="duration-200 hover:text-green-300">
+      <a href="{base}/{tab.link}" class="duration-200 hover:text-green-300">
         <p>{tab.name}</p>
       </a>
     {/each}
