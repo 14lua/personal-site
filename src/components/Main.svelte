@@ -7,14 +7,14 @@
 <main class="flex flex-col flex-1 p-4 justify-center items-center">
   <section
     id="intoPage"
-    class="flex flex-col lg:flex-row gap-10 py-8 sm:py-14 h-[calc(100vh-75px)] justify-center items-center"
+    class="flex flex-col lg:flex-row gap-x- py-8 sm:py-14 h-[calc(100vh-75px)] justify-between items-center"
   >
     <div
       class="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10"
     >
       <h2 class="font-semibold text-4xl sm:text-5xl md:text-6xl pr-12">
         Welcome to the<br /><span class="poppins text-green-700"
-          >the dark side of the moon</span
+          >dark side of the moon</span
         >
       </h2>
       <p class="text-base sm:text-lg md:text-xl">

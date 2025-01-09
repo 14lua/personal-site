@@ -41,6 +41,7 @@ h3,
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
   color: rgb(3 7 18 / var(--tw-text-opacity, 1));
+  z-index: 10;
 }
 
 .luaButton:hover {
