@@ -26,7 +26,7 @@
         <img
           src="images/{firstTrackFilename}"
           alt="Profile"
-          class="object-cover z-[2] max-h-[50vh] whiteGlow hover:blur-sm duration-200 ease-in-out"
+          class="object-cover z-[2] max-h-[50vh] whiteGlow blur-sm hover:blur-none duration-300 ease-in-out"
         />
       </a>
     </div>
