@@ -1,4 +1,7 @@
-<script>
+<script lang="ts">
+  import { tracksStore } from "../stores/tracks";
+  let tracks = $tracksStore?.tracks;
+  let firstTrackFilename = tracks ? tracks[0].filename : "";
 </script>
 
 <main class="flex flex-col flex-1 p-4 justify-center items-center">
@@ -9,7 +12,7 @@
     <div
       class="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10"
     >
-      <h2 class="font-semibold text-4xl sm:text-5xl md:text-6xl">
+      <h2 class="font-semibold text-4xl sm:text-5xl md:text-6xl pr-12">
         Welcome to the<br /><span class="poppins text-green-700"
           >the dark side of the moon</span
         >
@@ -19,11 +22,13 @@
       </p>
     </div>
     <div class="flex relative shadow-2xl place-items-center">
-      <img
-        src="images/profile.png"
-        alt="Profile image"
-        class="object-cover z-[2] max-h-[70vh]"
-      />
+      <a href="/music" target="_self">
+        <img
+          src="images/{firstTrackFilename}"
+          alt="Profile"
+          class="object-cover z-[2] max-h-[50vh] whiteGlow hover:blur-sm duration-200 ease-in-out"
+        />
+      </a>
     </div>
   </section>
 

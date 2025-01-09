@@ -15,7 +15,7 @@
       : " py-4 bg-transparent border-transparent")}
 >
   <h1 class="font-medium">
-    <b class="font-bold poppins">Lua</b> Music
+    <a href="/" target="_self"><b class="font-bold poppins">Lua</b> Music</a>
   </h1>
   <div class="sm:flex items-center gap-4 hidden">
     {#each tabs as tab}
