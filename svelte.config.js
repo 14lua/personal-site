@@ -5,7 +5,7 @@ const config = {
   kit: {
     adapter: adapter(),
     paths: {
-      base: process.env.NODE_ENV === 'production' ? '/sveltekit-github-pages' : '',
+      base: process.env.NODE_ENV === 'production' ? '/14lua.github.io/' : '/',
     }
   },
   preprocess: vitePreprocess(),
